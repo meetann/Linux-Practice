@@ -1,0 +1,128 @@
+    1  ls
+    2  yum install httpd
+    3  cd /etc/yum.repos.d/
+    4  ping 192.168.10.254
+    5  cd /etc/yum.repos.d/
+    6  ls
+    7  vim network.repo
+    8  yum install cronie 
+    9  yum install httpd
+   10  yum install ntpd -y
+   11  yum install ntp -y
+   12  yum install vsftpd -y
+   13  gsettings set org.gnome.nautilus.icon-view default-zoom-level small
+   14  logout
+   15  cd /etc/yum.repos.d/
+   16  ls
+   17  vim ansible.repo
+   18  yum install ansible
+   19  rpm -qc ansible
+   20  cd /etc/ansible/
+   21  ls
+   22  ansible localhost -m ping
+   23  cd
+   24  ansible -doc
+   25  ansible-doc copy
+   26  cd /etc/ansible/
+   27  vim play
+   28  vim copy.yml
+   29  cd /var/www/html
+   30  touch adhoc
+   31  cd
+   32  ansible-playbook copy.yml
+   33  ansible-playbook.copy.yml
+   34  ansible-playbook copy.yml
+   35  cd /etc/ansible/
+   36  ansible-playbook copy.yml
+   37  vim copy.yml
+   38  vim yum.yml
+   39  ifconfig
+   40  yum whatprovides sshpass
+   41  yum install sshpass
+   42  cd
+   43  cd /etc/ansible/
+   44  ls
+   45  vim hosts
+   46  cp hosts hosts_copy
+   47  vim hosts_copy 
+   48  vim hosts
+   49  ssh -X root@192.168.10.208
+   50  vim copy.yml
+   51  vim yum.yml
+   52  vim hosts
+   53  vim hosts_copy 
+   54  vim hosts
+   55  ping 192.168.10.86
+   56  ansible clients -m ping
+   57  ssh -X root@192.168.10.86
+   58  ansible clients -m ping --ask-pass
+   59  logout
+   60  dhclient -r
+   61  iptables -F
+   62  dhclient -v
+   63  dhclient -r
+   64  iptables -F
+   65  dhclient -v
+   66  ifconfig
+   67  ifconfig wlo1 192.168.10.44
+   68  ifconfig
+   69  logout
+   70  yum install httpd
+   71  cd /etc/yum.repos.d/
+   72  ls
+   73  cat network.repo 
+   74  yum install ntp
+   75  rpm -qc cronie
+   76  yum install python-pip
+   77  yum install vlc
+   78  pip install awscli numpy boto3
+   79  pip install awscli 
+   80  pip install numpy
+   81  python
+   82  pip install numpy
+   83  yum install gcc
+   84  yum install python-devel
+   85  pip install numpy
+   86  pip install boto3
+   87  pip install awscli*
+   88  pip install awscli
+   89  python
+   90  pip install tweepy
+   91  python
+   92  dhclient -r
+   93  ifconfig
+   94  dhclient -v
+   95  rpm -q git
+   96  git --help
+   97  mkdir /root/Desktop/mynewrepo
+   98  cd /root/Desktop/
+   99  git remote add mynewrepo/
+  100  git remote show
+  101  git clone https://github.com/meetann/Awsproject.git
+  102  history
+  103  cd /etc/ansible/
+  104  ls
+  105  vim tag_prac.yml
+  106  ansible -doc service
+  107  ansible-doc service
+  108  vim tag_prac.yml
+  109  ansible-playbook --tag user
+  110  ansible-playbook tag_prac.yml --tag user
+  111  cat /etc/shadow
+  112  vim tag_prac.yml
+  113  ansible-playbook tag_prac.yml --tag vsftpd
+  114  yum remove vsftpd
+  115  ansible-playbook tag_prac.yml --tag vsftpd
+  116  rpm -qc vsftpd
+  117  ansible-playbook tag_prac.yml --tag service1
+  118  vim tag_prac.yml
+  119  ansible-playbook tag_prac.yml --tag service1
+  120  ansible-playbook tag_prac.yml --tag httpd
+  121  ansible-playbook tag_prac.yml --tag service
+  122  ansible-playbook tag_prac.yml --tag hi
+  123  cd
+  124  cd /root/Desktop/
+  125  git clone https://github.com/meetann/Linux-Practice.git
+  126  cd..
+  127  cd 
+  128  history > /root/Desktop/history.txt
